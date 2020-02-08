@@ -8,6 +8,7 @@ class CreateListings < ActiveRecord::Migration[5.0]
       t.decimal :price, :precision => 8, :scale => 2
       t.integer :neighborhood_id
       t.integer :host_id
+      t.timestamps
     end
   end
 end
