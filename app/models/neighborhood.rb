@@ -1,3 +1,4 @@
 class Neighborhood < ActiveRecord::Base
-  has_many :reviews
+  belongs_to :city
+  has_many :reviews, through: :reservations
 end
